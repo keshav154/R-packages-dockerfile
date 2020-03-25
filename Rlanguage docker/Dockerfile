@@ -1,0 +1,67 @@
+FROM rocker/tidyverse:latest
+
+RUN apt update && apt install -y libmagick++-dev default-jre default-jdk
+RUN sudo R CMD javareconf
+RUN install2.r --error \
+    magick \
+    animation \
+    arules \
+    askpass \
+    assertthat \
+    backports \
+    base64enc \
+    BH \
+    bindr \
+    bindrcpp \
+    bitops \
+    callr \
+    caret \
+    caTools \
+    cellranger \
+    cli \
+    clipr \
+    colorspace \
+    corrplot \
+    crosstalk \
+    curl \
+    data.table \
+    DBI \
+    DEoptimR \
+    digest \
+    diptest \
+    dplyr \
+    e1071 \
+    ellipsis \
+    entropy \
+    evaluate \
+    excelR \
+    fansi \
+    flexmix \
+    foreach \
+    foreign \
+    gclus \
+    gdata \
+    generics \
+    ggplot2 \
+    glue \
+    gower \
+    gplots \
+    gridExtra \
+    gtable \
+    gtools \
+    highr \
+    hms \
+    htmltools \
+    htmlwidgets \
+    httpuv \
+    httr \
+    ipred \
+    iterators \
+    jsonlite \
+    kernlab \
+    knitr \
+    labeling \
+    later \
+    lava \
+    lazyeval \
+    crayon 
